@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:targetOnt="http://www.fokus.fraunhofer.de/test/targetOntology.owl#"
+    xmlns="http://www.fokus.fraunhofer.de/testingproject1/testcase1/ontologyinstances#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.fokus.fraunhofer.de/testingproject1/testcase1/ontologyinstances">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl"/>
+  </owl:Ontology>
+  <targetOnt:Postaddress rdf:ID="Address1">
+    <targetOnt:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Smith</targetOnt:familyName>
+    <targetOnt:cityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Berlin</targetOnt:cityName>
+    <targetOnt:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >John</targetOnt:givenName>
+  </targetOnt:Postaddress>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 120)  http://protege.stanford.edu -->

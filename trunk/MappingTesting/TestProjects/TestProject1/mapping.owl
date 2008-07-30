@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:srcOnt="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:targetOnt="http://www.fokus.fraunhofer.de/test/targetOntology.owl#"
+    xmlns="http://www.fokus.fraunhofer.de/test/mapping.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+    xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#" 
+  xml:base="http://www.fokus.fraunhofer.de/test/mapping.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl"/>
+    <owl:imports rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl"/>
+    <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl"/>
+  </owl:Ontology>
+  <swrl:Variable rdf:ID="h"/>
+  <swrl:Variable rdf:ID="a"/>
+  <swrl:Variable rdf:ID="c"/>
+  <swrl:Variable rdf:ID="g"/>
+  <swrl:Imp rdf:ID="Rule-3">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1>
+              <swrl:Variable rdf:ID="x"/>
+            </swrl:argument1>
+            <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#Postaddress"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#x"/>
+                <swrl:argument2 rdf:resource="#a"/>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#cityName"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#Address"/>
+            <swrl:argument1 rdf:resource="#x"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument2 rdf:resource="#a"/>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#city"/>
+                <swrl:argument1 rdf:resource="#x"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Imp rdf:ID="Rule-1">
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#Postaddress"/>
+            <swrl:argument1 rdf:resource="#x"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument2 rdf:resource="#a"/>
+                <swrl:argument1 rdf:resource="#x"/>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#givenName"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:head>
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#Address"/>
+            <swrl:argument1 rdf:resource="#x"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#x"/>
+                <swrl:argument2 rdf:resource="#a"/>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#firstName"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </swrl:AtomList>
+        </rdf:rest>
+      </swrl:AtomList>
+    </swrl:body>
+  </swrl:Imp>
+  <swrl:Variable rdf:ID="e"/>
+  <swrl:Variable rdf:ID="d"/>
+  <swrl:Variable rdf:ID="b"/>
+  <swrl:Imp rdf:ID="Rule-2">
+    <swrl:body>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#lastName"/>
+                <swrl:argument2 rdf:resource="#a"/>
+                <swrl:argument1 rdf:resource="#x"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="#x"/>
+            <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#Address"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:body>
+    <swrl:head>
+      <swrl:AtomList>
+        <rdf:rest>
+          <swrl:AtomList>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            <rdf:first>
+              <swrl:DatavaluedPropertyAtom>
+                <swrl:argument1 rdf:resource="#x"/>
+                <swrl:argument2 rdf:resource="#a"/>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#familyName"/>
+              </swrl:DatavaluedPropertyAtom>
+            </rdf:first>
+          </swrl:AtomList>
+        </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="#x"/>
+            <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#Postaddress"/>
+          </swrl:ClassAtom>
+        </rdf:first>
+      </swrl:AtomList>
+    </swrl:head>
+  </swrl:Imp>
+  <swrl:Variable rdf:ID="f"/>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 128)  http://protege.stanford.edu -->

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns="http://localhost:8080/process/MediationProcessInput.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rosetta="http://localhost:8080/ontologies/RosettaNetOntology.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://localhost:8080/process/MediationProcessInput.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://localhost:8080/ontologies/RosettaNetOntology.owl"/>
+  </owl:Ontology>
+  <rosetta:PurchaseOrder rdf:ID="PurchaseOrder_1">
+    <rosetta:hasProductLineItem>
+      <rosetta:ProductLineItem rdf:ID="ProductLineItem_2">
+        <rosetta:hasRequestedQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >1</rosetta:hasRequestedQuantity>
+        <rosetta:hasGlobalProductIdentifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >00614141000012</rosetta:hasGlobalProductIdentifier>
+      </rosetta:ProductLineItem>
+    </rosetta:hasProductLineItem>
+  </rosetta:PurchaseOrder>
+  <rosetta:Pip3A4PurchaseOrderRequest rdf:ID="Pip3A4PurchaseOrderRequest_1">
+    <rosetta:hasPurchaseOrder rdf:resource="#PurchaseOrder_1"/>
+  </rosetta:Pip3A4PurchaseOrderRequest>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 500)  http://protege.stanford.edu -->

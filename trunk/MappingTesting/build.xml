@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="startMappingTestingTool" name="MappingTestingTool">
+	<path id="project.classpath">
+		<fileset dir="lib">
+			<include name="**/*.jar"/>
+		</fileset>
+		<fileset dir="lib/edu.stanford.smi.protegex.owl">
+			<include name="**/*.jar"/>
+		</fileset>
+		<fileset dir="lib/edu.stanford.smi.protegex.owl.inference.pellet">
+			<include name="**/*.jar"/>
+		</fileset>
+		<pathelement location="${basedir}"/>
+		<pathelement location="bin"/>
+	</path>
+
+	<target depends="init" name="compile">
+		<javac destdir="${basedir}/bin" source="1.6" target="1.6">
+			<src path="${basedir}/src"/>
+			<classpath refid="project.classpath"/>
+		</javac>
+	</target>
+	
+	<target name="init">
+        	<mkdir dir="bin"/>
+	</target>
+	<target name="clean">
+	        <delete dir="bin"/>
+	</target>	
+	
+		
+	<target name="startMappingTestingTool">
+		<java classname="core.Application" fork="true">
+			<classpath refid="project.classpath"/>
+			<jvmarg value="-Xms512m"/>
+			<jvmarg value="-Xmx512m"/>		 
+		</java>
+	</target>
+</project>

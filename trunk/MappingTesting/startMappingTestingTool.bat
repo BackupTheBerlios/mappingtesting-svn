@@ -1,0 +1,4 @@
+call ant startMappingTestingTool
+
+
+pause

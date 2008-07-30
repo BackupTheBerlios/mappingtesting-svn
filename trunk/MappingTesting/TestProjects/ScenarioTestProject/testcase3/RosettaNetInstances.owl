@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns="http://localhost:8080/process/MediationProcessInput.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rosetta="http://localhost:8080/ontologies/RosettaNetOntology.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://localhost:8080/process/MediationProcessInput.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://localhost:8080/ontologies/RosettaNetOntology.owl"/>
+  </owl:Ontology>
+  <rosetta:ContactInformation rdf:ID="ContactInformation_6">
+    <rosetta:hasEmailAddress rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >stefania.wolf@blue.com</rosetta:hasEmailAddress>
+    <rosetta:hasTelephoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >+43(650)89930023</rosetta:hasTelephoneNumber>
+    <rosetta:hasContactName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stefania Wolf</rosetta:hasContactName>
+  </rosetta:ContactInformation>
+  <rosetta:Buyer rdf:ID="Buyer_2">
+    <rosetta:relatesToPartner>
+      <rosetta:Partner rdf:ID="Partner_4">
+        <rosetta:hasContactInformation rdf:resource="#ContactInformation_6"/>
+        <rosetta:hasBusinessDescription>
+          <rosetta:BusinessDescription rdf:ID="BusinessDescription_5">
+            <rosetta:hasBusinessName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Blue Company</rosetta:hasBusinessName>
+          </rosetta:BusinessDescription>
+        </rosetta:hasBusinessDescription>
+        <rosetta:hasPhysicalLocation>
+          <rosetta:PhysicalAddress rdf:ID="PhysicalAddress_1">
+            <rosetta:hasStreet rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Universitaetsstr.</rosetta:hasStreet>
+            <rosetta:hasGlobalCountryCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >AT</rosetta:hasGlobalCountryCode>
+            <rosetta:hasCityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Innsbruck</rosetta:hasCityName>
+            <rosetta:hasNationalPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >A-6020</rosetta:hasNationalPostalCode>
+          </rosetta:PhysicalAddress>
+        </rosetta:hasPhysicalLocation>
+      </rosetta:Partner>
+    </rosetta:relatesToPartner>
+  </rosetta:Buyer>
+  <rosetta:Pip3A4PurchaseOrderRequest rdf:ID="Pip3A4PurchaseOrderRequest_1">
+    <rosetta:hasFromRole rdf:resource="#Buyer_2"/>
+  </rosetta:Pip3A4PurchaseOrderRequest>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 500)  http://protege.stanford.edu -->

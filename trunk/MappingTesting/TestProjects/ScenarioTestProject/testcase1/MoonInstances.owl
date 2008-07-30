@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns="http://localhost:8080/process/MediationProcessInput.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:moon="http://localhost:8080/ontologies/MoonOntology.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://localhost:8080/process/MediationProcessInput.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://localhost:8080/ontologies/MoonOntology.owl"/>
+  </owl:Ontology>
+  <moon:ContactInfo rdf:ID="ContactInformation_6">
+    <moon:hasBusinessName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Blue Company</moon:hasBusinessName>
+    <moon:hasEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >stefania.wolf@blue.com</moon:hasEmail>
+    <moon:hasContactName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stefania Wolf</moon:hasContactName>
+    <moon:hasTelephone rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >+43(650)89930023</moon:hasTelephone>
+  </moon:ContactInfo>
+  <moon:PostalAddress rdf:ID="PhysicalAddress_1">
+    <moon:hasAddressLine1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Universitaetsstr._3</moon:hasAddressLine1>
+    <moon:hasCountryCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >AT</moon:hasCountryCode>
+    <moon:hasPostalCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A-6020</moon:hasPostalCode>
+    <moon:hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Innsbruck</moon:hasCity>
+  </moon:PostalAddress>
+  <moon:Location rdf:ID="SWRLCreated_3">
+    <moon:hasPostalAddress rdf:resource="#PhysicalAddress_1"/>
+  </moon:Location>
+  <moon:Customer rdf:ID="Partner_4">
+    <moon:hasContactInfo rdf:resource="#ContactInformation_6"/>
+    <moon:hasLocation rdf:resource="#SWRLCreated_3"/>
+  </moon:Customer>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 500)  http://protege.stanford.edu -->

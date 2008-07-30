@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.fokus.fraunhofer.de/test/sourceOntology.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="PersonalInformation"/>
+  <owl:Class rdf:ID="Address">
+    <rdfs:subClassOf rdf:resource="#PersonalInformation"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:ID="firstName">
+    <rdfs:domain rdf:resource="#Address"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="city">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Address"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="lastName">
+    <rdfs:domain rdf:resource="#Address"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 126)  http://protege.stanford.edu -->

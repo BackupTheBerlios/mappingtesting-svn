@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://localhost:8080/ontologies/RosettaNetOntology.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://localhost:8080/ontologies/RosettaNetOntology.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="PhysicalAddress">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:rest>
+                <rdf:List>
+                  <rdf:first>
+                    <owl:Restriction>
+                      <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                      >1</owl:cardinality>
+                      <owl:onProperty>
+                        <owl:DatatypeProperty rdf:ID="hasStreet"/>
+                      </owl:onProperty>
+                    </owl:Restriction>
+                  </rdf:first>
+                  <rdf:rest>
+                    <rdf:List>
+                      <rdf:first>
+                        <owl:Restriction>
+                          <owl:onProperty>
+                            <owl:DatatypeProperty rdf:ID="hasHouseNr"/>
+                          </owl:onProperty>
+                          <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                          >1</owl:cardinality>
+                        </owl:Restriction>
+                      </rdf:first>
+                      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:List>
+                  </rdf:rest>
+                </rdf:List>
+              </rdf:rest>
+              <rdf:first>
+                <owl:Restriction>
+                  <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                  >1</owl:cardinality>
+                  <owl:onProperty>
+                    <owl:DatatypeProperty rdf:ID="hasNationalPostalCode"/>
+                  </owl:onProperty>
+                </owl:Restriction>
+              </rdf:first>
+            </rdf:rest>
+            <rdf:first>
+              <owl:Restriction>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+                >1</owl:cardinality>
+                <owl:onProperty>
+                  <owl:DatatypeProperty rdf:ID="hasGlobalCountryCode"/>
+                </owl:onProperty>
+              </owl:Restriction>
+            </rdf:first>
+          </rdf:rest>
+          <rdf:first>
+            <owl:Restriction>
+              <owl:onProperty>
+                <owl:DatatypeProperty rdf:ID="hasCityName"/>
+              </owl:onProperty>
+              <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+              >1</owl:cardinality>
+            </owl:Restriction>
+          </rdf:first>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="ProductLineItem">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasGlobalProductIdentifier"/>
+            </owl:onProperty>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasRequestedQuantity"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Partner">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:FunctionalProperty rdf:ID="hasBusinessDescription"/>
+            </owl:onProperty>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="hasContactInformation"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="hasPhysicalLocation"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="FinancialAmount"/>
+  <owl:Class rdf:ID="Pip3A4PurchaseOrderConfirmation"/>
+  <owl:Class rdf:ID="PurchaseOrder">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasProductLineItem"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="BusinessDescription">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="hasBusinessName"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="ProductProvider">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="PartnerRole"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Pip3A4PurchaseOrderRequest"/>
+  <owl:Class rdf:ID="ContactInformation">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasContactName"/>
+            </owl:onProperty>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasEmailAddress"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasTelephoneNumber"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#PartnerRole">
+    <owl:equivalentClass rdf:parseType="Resource">
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Buyer">
+    <rdfs:subClassOf rdf:resource="#PartnerRole"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasTotalLineItemAmount">
+    <rdfs:domain rdf:resource="#ProductLineItem"/>
+    <rdfs:range rdf:resource="#FinancialAmount"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasToRole">
+    <rdfs:range rdf:resource="#PartnerRole"/>
+    <rdfs:domain rdf:resource="#Pip3A4PurchaseOrderRequest"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasProductLineItem">
+    <rdfs:range rdf:resource="#ProductLineItem"/>
+    <rdfs:domain rdf:resource="#PurchaseOrder"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasPurchaseOrder">
+    <rdfs:range rdf:resource="#PurchaseOrder"/>
+    <rdfs:domain rdf:resource="#Pip3A4PurchaseOrderRequest"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasPhysicalLocation">
+    <rdfs:range rdf:resource="#PhysicalAddress"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasFromRole">
+    <rdfs:domain rdf:resource="#Pip3A4PurchaseOrderRequest"/>
+    <rdfs:range rdf:resource="#PartnerRole"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="relatesToPartner">
+    <rdfs:range rdf:resource="#Partner"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasContactInformation">
+    <rdfs:range rdf:resource="#ContactInformation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasRequestedUnitPrice">
+    <rdfs:range rdf:resource="#FinancialAmount"/>
+    <rdfs:domain rdf:resource="#ProductLineItem"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="hasRequestingDocumentGenerationDateTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasRequestingDocumentIdentifier">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasNationalPostalCode">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasResponseDocumentIdentifier">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasTelephoneNumber">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLineNumber">
+    <rdfs:domain rdf:resource="#ProductLineItem"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasRequestedGlobalTransportEventCode">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#ProductLineItem"/>
+          <owl:Class rdf:about="#PurchaseOrder"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasContactName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasDropShipAffirmationIndicator">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#PurchaseOrder"/>
+          <owl:Class rdf:about="#ProductLineItem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasGlobalPurchaseOrderStatusCode">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasGlobalCurrencyCode">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#FinancialAmount"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasMonetaryAmount">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#FinancialAmount"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasGlobalProductUnitOfMeasureCode">
+    <rdfs:domain rdf:resource="#ProductLineItem"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasRequestedQuantity">
+    <rdfs:domain rdf:resource="#ProductLineItem"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasEmailAddress">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasGlobalPurchaseOrderTypeCode">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#PurchaseOrder"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasResponseDocumentGenerationDateTime">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasGlobalProductIdentifier">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#ProductLineItem"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasCityName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasGlobalCountryCode">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >untryCode as class and defined by one of individuals "de, en, ..."</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasRequestedDateStamp">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#ProductLineItem"/>
+          <owl:Class rdf:about="#PurchaseOrder"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="#hasBusinessName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#hasBusinessDescription">
+    <rdfs:range rdf:resource="#BusinessDescription"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 500)  http://protege.stanford.edu -->

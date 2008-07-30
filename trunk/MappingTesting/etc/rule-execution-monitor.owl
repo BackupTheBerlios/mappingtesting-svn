@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns="http://www.fokus.fraunhofer.de/rule-execution-monitor.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.fokus.fraunhofer.de/rule-execution-monitor.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="RuleExecutionResults"/>
+  <owl:DatatypeProperty rdf:ID="ruleWasFired">
+    <rdfs:domain rdf:resource="#RuleExecutionResults"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <RuleExecutionResults rdf:ID="RuleExecutionResults_Instance"/>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 504)  http://protege.stanford.edu -->

@@ -1,0 +1,754 @@
+<project><prefix label="rdf" namespaceUri="http://www.w3.org/1999/02/22-rdf-syntax-ns#" /><prefix label="rdfs" namespaceUri="http://www.w3.org/2000/01/rdf-schema#" /><prefix label="owl" namespaceUri="http://www.w3.org/2002/07/owl#" /><prefix label="xsd" namespaceUri="http://www.w3.org/2001/XMLSchema#" /><prefix label="swrl" namespaceUri="http://www.w3.org/2003/11/swrl#" /><prefix label="protege" namespaceUri="http://protege.stanford.edu/plugins/owl/protege#" /><prefix label="xsp" namespaceUri="http://www.owl-ontologies.com/2005/08/07/xsp.owl#" /><prefix label="swrlb" namespaceUri="http://www.w3.org/2003/11/swrlb#" /><prefix label="daml" namespaceUri="http://www.daml.org/2001/03/daml+oil#" /><prefix label="" namespaceUri="http://localhost:8080/ontologies/RosettaNetOntology.owl#" /><prefix label="" namespaceUri="http://localhost:8080/ontologies/MoonOntology.owl#" /><ontologyGroup name="From Ontology" ><url>file:/C:/OAN/DIPLOM/EclipseWorkspaceForMaven/MappingTesting/TestProjects/ScenarioTestProject/RosettaNetOntology.owl</url></ontologyGroup><ontologyGroup name="To Ontology" ><url>file:/C:/OAN/DIPLOM/EclipseWorkspaceForMaven/MappingTesting/TestProjects/ScenarioTestProject/MoonOntology.owl</url></ontologyGroup><rule label="ContactInformation2ContactInfo" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node id="1" type="snoggle.gui.model.node.VariableNode" x="233.0" y="313.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="false" varname="contactName" locked="false"  />
+   </node>
+   <node id="2" type="snoggle.gui.model.node.VariableNode" x="89.0" y="250.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/RosettaNetOntology.owl#ContactInformation" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="false" varname="contactInformation" locked="false"  />
+   </node>
+   <node id="3" type="snoggle.gui.model.node.VariableNode" x="89.0" y="441.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="false" varname="emailAddress" locked="false"  />
+   </node>
+   <node id="4" type="snoggle.gui.model.node.VariableNode" x="186.0" y="388.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="false" varname="telephoneNumber" locked="false"  />
+   </node>
+</body>
+<head>
+   <node id="5" type="snoggle.gui.model.node.VariableNode" x="398.0" y="315.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var4" locked="true" lockedName="contactName"  />
+   </node>
+   <node id="6" type="snoggle.gui.model.node.VariableNode" x="528.0" y="440.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var6" locked="true" lockedName="emailAddress"  />
+   </node>
+   <node id="7" type="snoggle.gui.model.node.VariableNode" x="456.0" y="387.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var5" locked="true" lockedName="telephoneNumber"  />
+   </node>
+   <node id="8" type="snoggle.gui.model.node.VariableNode" x="534.0" y="246.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#ContactInfo" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="ContactInfo1" locked="true" lockedName="contactInformation"  />
+   </node>
+</head>
+<edges>
+   <edge from="2" to="8" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+   </edge>
+   <edge from="2" to="3" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasEmailAddress" />
+   </edge>
+   <edge from="2" to="1" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasContactName" />
+   </edge>
+   <edge from="8" to="7" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasTelephone" />
+   </edge>
+   <edge from="1" to="5" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+   </edge>
+   <edge from="4" to="7" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+   </edge>
+   <edge from="8" to="6" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasEmail" />
+   </edge>
+   <edge from="8" to="5" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasContactName" />
+   </edge>
+   <edge from="2" to="4" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasTelephoneNumber" />
+   </edge>
+   <edge from="3" to="6" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+   </edge>
+</edges>
+</canvas>
+</rule><rule label="BusinessDescriprion2BusinessName" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node h="35.0" id="1" type="snoggle.gui.model.node.VariableNode" w="120.0" x="139.0" y="392.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="businessName"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="2" type="snoggle.gui.model.node.VariableNode" w="120.0" x="136.0" y="314.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="businessDescription"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="3" type="snoggle.gui.model.node.VariableNode" w="120.0" x="138.0" y="239.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="partner"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/RosettaNetOntology.owl#Partner"/></Property>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="4" type="snoggle.gui.model.node.VariableNode" w="120.0" x="140.0" y="159.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="contactInformation"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+</body>
+<head>
+   <node h="35.0" id="5" type="snoggle.gui.model.node.VariableNode" w="120.0" x="333.0" y="244.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="partner" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="Customer1"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#Customer"/></Property>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="6" type="snoggle.gui.model.node.VariableNode" w="120.0" x="404.0" y="158.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="true" lockedName="contactInformation" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="contactInfo"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="7" type="snoggle.gui.model.node.VariableNode" w="120.0" x="406.0" y="391.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="businessName" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="var19"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+</head>
+<edges>
+   <edge from="3" to="4" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasContactInformation"/>
+   </edge>
+   <edge from="6" to="7" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasBusinessName"/>
+   </edge>
+   <edge from="2" to="1" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasBusinessName"/>
+   </edge>
+   <edge from="3" to="5" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+   </edge>
+   <edge from="3" to="2" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasBusinessDescription"/>
+   </edge>
+   <edge from="1" to="7" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+   </edge>
+   <edge from="4" to="6" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+   </edge>
+   <edge from="5" to="6" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasContactInfo"/>
+   </edge>
+</edges>
+</canvas></rule><rule label="StreetAndHouseNr2AddressLine1" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node h="35.0" id="1" type="snoggle.gui.model.node.VariableNode" w="120.0" x="151.0" y="539.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="streetAndHouseNr"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="2" type="snoggle.gui.model.node.VariableNode" w="120.0" x="290.0" y="370.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="houseNr"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="3" type="snoggle.gui.model.node.VariableNode" w="120.0" x="150.0" y="247.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="physicalAddress"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/RosettaNetOntology.owl#PhysicalAddress"/></Property>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="4" type="snoggle.gui.model.node.BuiltinNode" w="120.0" x="152.0" y="456.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property label="String Concatenation" type="snoggle.gui.widgets.canvas.persistence.BuiltinProp" uri="http://www.w3.org/2003/11/swrlb#stringConcat"><input builtinComponentType="UNSPECIFIED" label="String" order="2" repeat="true"/><output builtinComponentType="UNSPECIFIED" label="Output String" order="1" repeat="false"/></Property>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+   </node>
+   <node h="35.0" id="5" type="snoggle.gui.model.node.VariableNode" w="120.0" x="19.0" y="364.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="street"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="27.0" id="6" type="snoggle.gui.model.node.LiteralNode" w="120.0" x="154.0" y="370.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.LiteralProp">_</Property>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+   </node>
+</body>
+<head>
+   <node h="35.0" id="7" type="snoggle.gui.model.node.VariableNode" w="120.0" x="531.0" y="255.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="physicalAddress" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="PostalAddress1"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#PostalAddress"/></Property>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="8" type="snoggle.gui.model.node.VariableNode" w="120.0" x="537.0" y="541.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="streetAndHouseNr" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="var79"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+</head>
+<edges>
+   <edge from="4" to="1" type="snoggle.gui.model.edge.BuiltinEdge">
+      <Property order="0" type="snoggle.gui.widgets.canvas.persistence.OrderProp$TargetOrder"/>
+      
+      <Property edgeType="BUILTIN" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property builtinComponentType="UNSPECIFIED" label="Output String" order="1" repeat="false" type="snoggle.gui.widgets.canvas.persistence.IncomingBuiltinComponentProp"/>
+      <Property order="0" type="snoggle.gui.widgets.canvas.persistence.OrderProp$SourceOrder"/>
+   </edge>
+   <edge from="3" to="7" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+   </edge>
+   <edge from="3" to="2" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasHouseNr"/>
+   </edge>
+   <edge from="6" to="4" type="snoggle.gui.model.edge.BuiltinEdge">
+      <Property order="0" type="snoggle.gui.widgets.canvas.persistence.OrderProp$TargetOrder"/>
+      <Property builtinComponentType="UNSPECIFIED" label="String" order="2" repeat="true" type="snoggle.gui.widgets.canvas.persistence.OutgoingBuiltinComponentProp"/>
+      <Property edgeType="BUILTIN" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      
+      <Property order="0" type="snoggle.gui.widgets.canvas.persistence.OrderProp$SourceOrder"/>
+   </edge>
+   <edge from="2" to="4" type="snoggle.gui.model.edge.BuiltinEdge">
+      <Property order="0" type="snoggle.gui.widgets.canvas.persistence.OrderProp$TargetOrder"/>
+      <Property builtinComponentType="UNSPECIFIED" label="String" order="2" repeat="true" type="snoggle.gui.widgets.canvas.persistence.OutgoingBuiltinComponentProp"/>
+      <Property edgeType="BUILTIN" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+      
+      <Property order="0" type="snoggle.gui.widgets.canvas.persistence.OrderProp$SourceOrder"/>
+   </edge>
+   <edge from="5" to="4" type="snoggle.gui.model.edge.BuiltinEdge">
+      <Property order="0" type="snoggle.gui.widgets.canvas.persistence.OrderProp$TargetOrder"/>
+      <Property builtinComponentType="UNSPECIFIED" label="String" order="2" repeat="true" type="snoggle.gui.widgets.canvas.persistence.OutgoingBuiltinComponentProp"/>
+      <Property edgeType="BUILTIN" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+      
+      <Property order="0" type="snoggle.gui.widgets.canvas.persistence.OrderProp$SourceOrder"/>
+   </edge>
+   <edge from="3" to="5" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasStreet"/>
+   </edge>
+   <edge from="7" to="8" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasAddressLine1"/>
+   </edge>
+   <edge from="1" to="8" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+   </edge>
+</edges>
+</canvas></rule><rule label="CityName2City" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node h="35.0" id="1" type="snoggle.gui.model.node.VariableNode" w="120.0" x="139.0" y="224.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="physicalAddress"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/RosettaNetOntology.owl#PhysicalAddress"/></Property>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="2" type="snoggle.gui.model.node.VariableNode" w="120.0" x="143.0" y="319.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="cityName"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+</body>
+<head>
+   <node h="35.0" id="3" type="snoggle.gui.model.node.VariableNode" w="120.0" x="356.0" y="321.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="cityName" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="var128"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="4" type="snoggle.gui.model.node.VariableNode" w="120.0" x="354.0" y="221.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="physicalAddress" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="PostalAddress2"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#PostalAddress"/></Property>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+</head>
+<edges>
+   <edge from="1" to="4" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+   </edge>
+   <edge from="4" to="3" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasCity"/>
+   </edge>
+   <edge from="1" to="2" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasCityName"/>
+   </edge>
+   <edge from="2" to="3" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+   </edge>
+</edges>
+</canvas></rule><rule label="GlobalCountryCode2CountryCode" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node h="35.0" id="1" type="snoggle.gui.model.node.VariableNode" w="120.0" x="145.0" y="289.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="globalCountryCode"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="2" type="snoggle.gui.model.node.VariableNode" w="120.0" x="139.0" y="214.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="physicalAddress"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/RosettaNetOntology.owl#PhysicalAddress"/></Property>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+</body>
+<head>
+   <node h="35.0" id="3" type="snoggle.gui.model.node.VariableNode" w="120.0" x="344.0" y="211.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="physicalAddress" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="PostalAddress2"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#PostalAddress"/></Property>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="4" type="snoggle.gui.model.node.VariableNode" w="120.0" x="348.0" y="285.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="globalCountryCode" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="var144"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+</head>
+<edges>
+   <edge from="3" to="4" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasCountryCode"/>
+   </edge>
+   <edge from="2" to="3" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+   </edge>
+   <edge from="2" to="1" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasGlobalCountryCode"/>
+   </edge>
+   <edge from="1" to="4" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+   </edge>
+</edges>
+</canvas></rule><rule label="NationalPostalCode2PostalCode" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node h="35.0" id="1" type="snoggle.gui.model.node.VariableNode" w="120.0" x="148.0" y="294.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="nationalPostalCode"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="2" type="snoggle.gui.model.node.VariableNode" w="120.0" x="149.0" y="214.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="physicalAddress"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/RosettaNetOntology.owl#PhysicalAddress"/></Property>
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+</body>
+<head>
+   <node h="35.0" id="3" type="snoggle.gui.model.node.VariableNode" w="120.0" x="337.0" y="295.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="nationalPostalCode" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="var196"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+   <node h="35.0" id="4" type="snoggle.gui.model.node.VariableNode" w="120.0" x="344.0" y="211.0">
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="physicalAddress" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="PostalAddress2"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#PostalAddress"/></Property>
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+   </node>
+</head>
+<edges>
+   <edge from="1" to="3" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+   </edge>
+   <edge from="2" to="1" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasNationalPostalCode"/>
+   </edge>
+   <edge from="2" to="4" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+   </edge>
+   <edge from="4" to="3" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasPostalCode"/>
+   </edge>
+</edges>
+</canvas></rule><rule label="PhysicalAddress2LocationAndPostalAddress" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node id="1" type="snoggle.gui.model.node.VariableNode" x="83.0" y="210.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/RosettaNetOntology.owl#Partner" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="false" varname="partner" locked="false"  />
+   </node>
+   <node id="2" type="snoggle.gui.model.node.VariableNode" x="251.0" y="363.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="false" varname="location" locked="false"  />
+   </node>
+   <node id="3" type="snoggle.gui.model.node.VariableNode" x="87.0" y="415.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="false" varname="physicalAddress" locked="false"  />
+   </node>
+   <node id="4" type="snoggle.gui.model.node.BuiltinNode" x="188.0" y="273.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.BuiltinProp" uri="http://swrl.stanford.edu/ontologies/built-ins/3.3/swrlx.owl#createOWLThing" label="CreateOWLThing" ><input label="Arg 1" builtinComponentType="UNSPECIFIED" repeat="true" order="2" /><output label="NewInstance" builtinComponentType="UNSPECIFIED" repeat="false" order="1" /></Property>
+   </node>
+</body>
+<head>
+   <node id="5" type="snoggle.gui.model.node.VariableNode" x="536.0" y="210.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#Customer" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="Customer2" locked="true" lockedName="partner"  />
+   </node>
+   <node id="6" type="snoggle.gui.model.node.VariableNode" x="533.0" y="407.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var69" locked="true" lockedName="physicalAddress"  />
+   </node>
+   <node id="7" type="snoggle.gui.model.node.VariableNode" x="533.0" y="297.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#Location" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="Location1" locked="true" lockedName="location"  />
+   </node>
+</head>
+<edges>
+   <edge from="4" to="2" type="snoggle.gui.model.edge.BuiltinEdge" >
+      
+      <Property type="snoggle.gui.widgets.canvas.persistence.OrderProp$SourceOrder" order="0" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.OrderProp$TargetOrder" order="0" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.IncomingBuiltinComponentProp" label="NewInstance" builtinComponentType="UNSPECIFIED" repeat="false" order="1" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="BUILTIN" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+   </edge>
+   <edge from="3" to="4" type="snoggle.gui.model.edge.BuiltinEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.OutgoingBuiltinComponentProp" label="Arg 1" builtinComponentType="UNSPECIFIED" repeat="true" order="2" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.OrderProp$SourceOrder" order="0" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.OrderProp$TargetOrder" order="0" />
+      
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="BUILTIN" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+   </edge>
+   <edge from="1" to="3" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasPhysicalLocation" />
+   </edge>
+   <edge from="2" to="7" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="1" to="5" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+   </edge>
+   <edge from="7" to="6" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasPostalAddress" />
+   </edge>
+   <edge from="5" to="7" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasLocation" />
+   </edge>
+   <edge from="3" to="6" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+</edges>
+</canvas>
+</rule><rule label="ProductLineItem2OrderItem" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node h="35.0" id="1" type="snoggle.gui.model.node.VariableNode" w="120.0" x="193.0" y="321.0">
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="globalProductIdentifier"/>
+   </node>
+   <node h="35.0" id="2" type="snoggle.gui.model.node.VariableNode" w="120.0" x="88.0" y="396.0">
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="false" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="requestedQuantity"/>
+   </node>
+   <node h="38.0" id="3" type="snoggle.gui.model.node.VariableNode" w="120.0" x="111.0" y="220.0">
+      <Property location="BODY" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/RosettaNetOntology.owl#ProductLineItem"/></Property>
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="false" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="ProductLineItem1"/>
+   </node>
+</body>
+<head>
+   <node h="35.0" id="4" type="snoggle.gui.model.node.VariableNode" w="120.0" x="441.0" y="397.0">
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="requestedQuantity" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="var204"/>
+   </node>
+   <node h="35.0" id="5" type="snoggle.gui.model.node.VariableNode" w="120.0" x="445.0" y="225.0">
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="false" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#OrderItem"/></Property>
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="ProductLineItem1" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="OrderItem1"/>
+   </node>
+   <node h="35.0" id="6" type="snoggle.gui.model.node.VariableNode" w="120.0" x="347.0" y="316.0">
+      <Property location="HEAD" type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp"/>
+      <Property dataValued="true" type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp"/>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"/>
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+      <Property autogen="true" locked="true" lockedName="globalProductIdentifier" type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" varname="var205"/>
+   </node>
+</head>
+<edges>
+   <edge from="3" to="1" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasGlobalProductIdentifier"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+   </edge>
+   <edge from="5" to="6" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasArticleID"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+   </edge>
+   <edge from="1" to="6" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+   </edge>
+   <edge from="3" to="5" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property propertyType="REFERENCE" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+   </edge>
+   <edge from="3" to="2" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasRequestedQuantity"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+      <Property element_order="10" type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp"/>
+   </edge>
+   <edge from="2" to="4" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null"/>
+      <Property edgeType="CROSS_RULE_MAP" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+   </edge>
+   <edge from="5" to="4" type="snoggle.gui.model.edge.SnoggleEdge">
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasQuantity"/>
+      <Property edgeType="PROPERTY" type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp"/>
+      <Property propertyType="DATA_VALUED" type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp"/>
+   </edge>
+</edges>
+</canvas></rule><rule label="PurchaseOrder2Order" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node id="1" type="snoggle.gui.model.node.VariableNode" x="167.0" y="253.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="false" varname="productLineItem" locked="false"  />
+   </node>
+   <node id="2" type="snoggle.gui.model.node.VariableNode" x="158.0" y="175.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/RosettaNetOntology.owl#PurchaseOrder" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="false" varname="purchaseOrder" locked="false"  />
+   </node>
+</body>
+<head>
+   <node id="3" type="snoggle.gui.model.node.VariableNode" x="429.0" y="249.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var61" locked="true" lockedName="productLineItem"  />
+   </node>
+   <node id="4" type="snoggle.gui.model.node.VariableNode" x="427.0" y="177.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://localhost:8080/ontologies/MoonOntology.owl#Order" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="Order1" locked="true" lockedName="purchaseOrder"  />
+   </node>
+</head>
+<edges>
+   <edge from="2" to="4" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+   </edge>
+   <edge from="1" to="3" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+   </edge>
+   <edge from="2" to="1" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/RosettaNetOntology.owl#hasProductLineItem" />
+   </edge>
+   <edge from="4" to="3" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://localhost:8080/ontologies/MoonOntology.owl#hasItem" />
+   </edge>
+</edges>
+</canvas>
+</rule></project>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.fokus.fraunhofer.de/testproject.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.fokus.fraunhofer.de/testproject.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="TestCase"/>
+  <owl:Class rdf:ID="TestProject"/>
+  <owl:ObjectProperty rdf:ID="hasTestCase">
+    <rdfs:domain rdf:resource="#TestProject"/>
+    <rdfs:range rdf:resource="#TestCase"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="targetOntology">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#TestProject"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="testInputInstances">
+    <rdfs:domain rdf:resource="#TestCase"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="description">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#TestCase"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="sourceOntology">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#TestProject"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="expectedTestOutputInstances">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#TestCase"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#TestCase"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="ontologyMapping">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#TestProject"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 504)  http://protege.stanford.edu -->

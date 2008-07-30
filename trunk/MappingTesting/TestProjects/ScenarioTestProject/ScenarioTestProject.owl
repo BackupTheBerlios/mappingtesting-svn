@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:test="http://www.fokus.fraunhofer.de/testproject.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.fokus.fraunhofer.de/testprojects/ScenarioTestProject.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.fokus.fraunhofer.de/testprojects/ScenarioTestProject.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.fokus.fraunhofer.de/testproject.owl"/>
+  </owl:Ontology>
+  <test:TestProject rdf:ID="ScenarioTestProject">
+    <test:sourceOntology rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RosettaNetOntology.owl</test:sourceOntology>
+    
+
+    
+    <test:hasTestCase>
+      <test:TestCase rdf:ID="testcase1">
+        <test:expectedTestOutputInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase1/MoonInstances.owl</test:expectedTestOutputInstances>
+        <test:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase1</test:name>
+        <test:testInputInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase1/RosettaNetInstances.owl</test:testInputInstances>
+        <test:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >This test case tests mapping between classes Partner and Customer, ContactInformation and ContactInfo, PhysicalAddress, PostalAddress and Location</test:description>
+      </test:TestCase>
+    </test:hasTestCase>
+    
+    <test:hasTestCase>
+      <test:TestCase rdf:ID="testcase2">
+        <test:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase2</test:name>
+        <test:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Tests mapping between classes ContactInformation and ContactInfo, if instance of ContactInformation does not have property hasTelephoneNumber</test:description>
+        <test:testInputInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase2/RosettaNetInstances.owl</test:testInputInstances>
+        <test:expectedTestOutputInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase2/MoonInstances.owl</test:expectedTestOutputInstances>
+      </test:TestCase>
+    </test:hasTestCase>  
+    
+    <test:hasTestCase>
+      <test:TestCase rdf:ID="testcase3">
+        <test:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase3</test:name>
+        <test:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Tests mapping between classes PhysicalAddress and PostalAddress, if instance of PhysicalAddress does not have property hasHouseNr</test:description>
+        <test:testInputInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase3/RosettaNetInstances.owl</test:testInputInstances>
+        <test:expectedTestOutputInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase3/MoonInstances.owl</test:expectedTestOutputInstances>
+      </test:TestCase>
+    </test:hasTestCase>  
+    
+    <test:hasTestCase>
+      <test:TestCase rdf:ID="testcase4">
+        <test:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase4</test:name>
+        <test:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Tests mapping between classes PurchaseOrder and Order, ProductLineItem and OrderItem</test:description>
+        <test:testInputInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase4/RosettaNetInstances.owl</test:testInputInstances>
+        <test:expectedTestOutputInstances rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >testcase4/MoonInstances.owl</test:expectedTestOutputInstances>
+      </test:TestCase>
+    </test:hasTestCase> 
+    
+    <test:targetOntology rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MoonOntology.owl</test:targetOntology>
+    <test:ontologyMapping rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OntologyMapping.owl</test:ontologyMapping>
+  </test:TestProject>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 130)  http://protege.stanford.edu -->
