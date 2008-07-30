@@ -30,7 +30,7 @@
 	
 		
 	<target name="startMappingTestingTool">
-		<java classname="core.Application" fork="true">
+		<java classname="org.qualipso.interop.semantics.mappingtesting.core.Application" fork="true">
 			<classpath refid="project.classpath"/>
 			<jvmarg value="-Xms512m"/>
 			<jvmarg value="-Xmx512m"/>		 
