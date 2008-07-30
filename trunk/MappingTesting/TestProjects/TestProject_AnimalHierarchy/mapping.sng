@@ -1,0 +1,265 @@
+<project><prefix label="rdf" namespaceUri="http://www.w3.org/1999/02/22-rdf-syntax-ns#" /><prefix label="rdfs" namespaceUri="http://www.w3.org/2000/01/rdf-schema#" /><prefix label="owl" namespaceUri="http://www.w3.org/2002/07/owl#" /><prefix label="xsd" namespaceUri="http://www.w3.org/2001/XMLSchema#" /><prefix label="" namespaceUri="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#" /><prefix label="swrl" namespaceUri="http://www.w3.org/2003/11/swrl#" /><prefix label="protege" namespaceUri="http://protege.stanford.edu/plugins/owl/protege#" /><prefix label="xsp" namespaceUri="http://www.owl-ontologies.com/2005/08/07/xsp.owl#" /><prefix label="swrlb" namespaceUri="http://www.w3.org/2003/11/swrlb#" /><prefix label="daml" namespaceUri="http://www.daml.org/2001/03/daml+oil#" /><prefix label="" namespaceUri="http://www.fokus.fraunhofer.de/test/targetOntology.owl#" /><ontologyGroup name="From Ontology" ><url>file:/C:/OAN/DIPLOM/EclipseWorkspaceForMaven/MappingTesting/TestProjects/TestProject_AnimalHierarchy/sourceOntology.owl</url></ontologyGroup><ontologyGroup name="To Ontology" ><url>file:/C:/OAN/DIPLOM/EclipseWorkspaceForMaven/MappingTesting/TestProjects/TestProject_AnimalHierarchy/targetOntology.owl</url></ontologyGroup><rule label="Rule 1" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node id="1" type="snoggle.gui.model.node.VariableNode" x="115.0" y="194.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="Animal1" locked="false"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#Animal" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="2" type="snoggle.gui.model.node.VariableNode" x="117.0" y="349.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var1" locked="false"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="3" type="snoggle.gui.model.node.VariableNode" x="208.0" y="276.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var2" locked="false"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+</body>
+<head>
+   <node id="4" type="snoggle.gui.model.node.VariableNode" x="534.0" y="346.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var4" locked="true" lockedName="var1"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="5" type="snoggle.gui.model.node.VariableNode" x="420.0" y="274.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var3" locked="true" lockedName="var2"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="6" type="snoggle.gui.model.node.VariableNode" x="498.0" y="200.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="Bird1" locked="true" lockedName="Animal1"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://www.fokus.fraunhofer.de/test/targetOntology.owl#Bird" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+</head>
+<edges>
+   <edge from="1" to="6" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="6" to="5" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/targetOntology.owl#birdName" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </edge>
+   <edge from="2" to="4" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="3" to="5" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="1" to="3" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#name" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+   </edge>
+   <edge from="6" to="4" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/targetOntology.owl#birdAge" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+   </edge>
+   <edge from="1" to="2" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#age" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </edge>
+</edges>
+</canvas>
+</rule><rule label="Rule 2" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node id="1" type="snoggle.gui.model.node.VariableNode" x="117.0" y="349.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var1" locked="false"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="2" type="snoggle.gui.model.node.VariableNode" x="208.0" y="276.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var2" locked="false"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="3" type="snoggle.gui.model.node.VariableNode" x="115.0" y="194.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="Animal1" locked="false"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#Animal" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+</body>
+<head>
+   <node id="4" type="snoggle.gui.model.node.VariableNode" x="551.0" y="345.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var12" locked="true" lockedName="var1"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="5" type="snoggle.gui.model.node.VariableNode" x="495.0" y="191.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="Fish1" locked="true" lockedName="Animal1"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://www.fokus.fraunhofer.de/test/targetOntology.owl#Fish" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="6" type="snoggle.gui.model.node.VariableNode" x="433.0" y="276.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var11" locked="true" lockedName="var2"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+   </node>
+</head>
+<edges>
+   <edge from="3" to="1" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#age" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </edge>
+   <edge from="5" to="6" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/targetOntology.owl#fishName" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+   </edge>
+   <edge from="3" to="5" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="2" to="6" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="3" to="2" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#name" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+   </edge>
+   <edge from="1" to="4" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="5" to="4" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/targetOntology.owl#fishAge" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+   </edge>
+</edges>
+</canvas>
+</rule><rule label="Rule 3" ><canvas>
+<noloc>
+</noloc>
+<body>
+   <node id="1" type="snoggle.gui.model.node.VariableNode" x="208.0" y="276.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var2" locked="false"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="2" type="snoggle.gui.model.node.VariableNode" x="117.0" y="349.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var1" locked="false"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="3" type="snoggle.gui.model.node.VariableNode" x="115.0" y="194.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="BODY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="Animal1" locked="false"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#Animal" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+</body>
+<head>
+   <node id="4" type="snoggle.gui.model.node.VariableNode" x="501.0" y="184.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="Mammal1" locked="true" lockedName="Animal1"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"><Class name="http://www.fokus.fraunhofer.de/test/targetOntology.owl#Mammal" /></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="false" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="5" type="snoggle.gui.model.node.VariableNode" x="533.0" y="346.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var82" locked="true" lockedName="var1"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+   <node id="6" type="snoggle.gui.model.node.VariableNode" x="409.0" y="282.0" h="35.0" w="120.0">
+      <Property type="snoggle.gui.widgets.canvas.persistence.AtomLocationProp" location="HEAD" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableNameProp" autogen="true" varname="var81" locked="true" lockedName="var2"  />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ClassTypeProp"></Property>
+      <Property type="snoggle.gui.widgets.canvas.persistence.VariableTypeProp" dataValued="true" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </node>
+</head>
+<edges>
+   <edge from="4" to="6" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/targetOntology.owl#mammalName" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+   </edge>
+   <edge from="3" to="4" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="REFERENCE" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="3" to="2" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#age" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.ElementOrderProp" element_order="10" />
+   </edge>
+   <edge from="2" to="5" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="3" to="1" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#name" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+   </edge>
+   <edge from="1" to="6" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="null" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="CROSS_RULE_MAP" />
+   </edge>
+   <edge from="4" to="5" type="snoggle.gui.model.edge.SnoggleEdge" >
+      <Property type="snoggle.gui.widgets.canvas.persistence.PropertyTypeProp" propertyType="DATA_VALUED" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeProperty" uri="http://www.fokus.fraunhofer.de/test/targetOntology.owl#mammalAge" />
+      <Property type="snoggle.gui.widgets.canvas.persistence.EdgeTypeProp" edgeType="PROPERTY" />
+   </edge>
+</edges>
+</canvas>
+</rule></project>

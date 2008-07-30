@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:ruleml="http://www.w3.org/2003/11/ruleml"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:srcOnt="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#"
+    xmlns="http://www.fokus.fraunhofer.de/test/mapping.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:targetOnt="http://www.fokus.fraunhofer.de/test/targetOntology.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.fokus.fraunhofer.de/test/mapping.owl">
+  
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl"/>
+    <owl:imports rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl"/>
+  </owl:Ontology>
+
+    <swrl:Variable rdf:about="#Animal1"/>
+    <swrl:Variable rdf:about="#var1"/>
+    <swrl:Variable rdf:about="#Animal1"/>
+    <swrl:Variable rdf:about="#Animal1"/>
+    <swrl:Variable rdf:about="#var2"/>
+    <swrl:Variable rdf:about="#var1"/>
+    <swrl:Variable rdf:about="#var1"/>
+    <swrl:Variable rdf:about="#Animal1"/>
+    <swrl:Variable rdf:about="#var2"/>
+    <swrl:Variable rdf:about="#Animal1"/>
+    <swrl:Variable rdf:about="#Animal1"/>
+    <swrl:Variable rdf:about="#var2"/>
+    <swrl:Variable rdf:about="#Animal1"/>
+    <swrl:Variable rdf:about="#Animal1"/>
+    <swrl:Variable rdf:about="#Animal1"/>
+    <swrl:Imp rdf:about="#Rule_3">
+        <swrl:head rdf:parseType="Collection">
+            <swrl:ClassAtom>
+                <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#Mammal"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+            </swrl:ClassAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#mammalName"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var2"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#mammalAge"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var1"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+        </swrl:head>
+        <swrl:body rdf:parseType="Collection">
+            <swrl:ClassAtom>
+                <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#Animal"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+            </swrl:ClassAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#age"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var1"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#name"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var2"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp rdf:about="#Rule_1">
+        <swrl:head rdf:parseType="Collection">
+            <swrl:ClassAtom>
+                <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#Bird"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+            </swrl:ClassAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#birdAge"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var1"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#birdName"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var2"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+        </swrl:head>
+        <swrl:body rdf:parseType="Collection">
+            <swrl:ClassAtom>
+                <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#Animal"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+            </swrl:ClassAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#name"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var2"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#age"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var1"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp rdf:about="#Rule_2">
+        <swrl:head rdf:parseType="Collection">
+            <swrl:ClassAtom>
+                <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#Fish"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+            </swrl:ClassAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#fishAge"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var1"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/targetOntology.owl#fishName"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var2"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+        </swrl:head>
+        <swrl:body rdf:parseType="Collection">
+            <swrl:ClassAtom>
+                <swrl:classPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#Animal"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+            </swrl:ClassAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#age"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var1"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+            <swrl:DatavaluedPropertyAtom>
+                <swrl:propertyPredicate rdf:resource="http://www.fokus.fraunhofer.de/test/sourceOntology.owl#name"/>
+                <swrl:argument1>
+                    <swrl:Variable rdf:about="#Animal1"/>
+                </swrl:argument1>
+                <swrl:argument2>
+                    <swrl:Variable rdf:about="#var2"/>
+                </swrl:argument2>
+            </swrl:DatavaluedPropertyAtom>
+        </swrl:body>
+    </swrl:Imp>
+</rdf:RDF>
